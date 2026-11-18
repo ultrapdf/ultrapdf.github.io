@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      window.addEventListener('error',function(e){if(e&&((e.filename&&e.filename.indexOf('chrome-extension://')===0)||(e.error&&e.error.stack&&String(e.error.stack).indexOf('chrome-extension://')!==-1))){e.preventDefault();e.stopImmediatePropagation();}},true);
+      window.__ultraPdfDeferredPrompt=null;
+      window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();window.__ultraPdfDeferredPrompt=e;window.dispatchEvent(new CustomEvent('ultrapdf:install-ready'));});
+      window.addEventListener('appinstalled',function(){window.__ultraPdfDeferredPrompt=null;window.dispatchEvent(new CustomEvent('ultrapdf:app-installed'));});
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+
+    <!-- Primary SEO Meta Tags -->
+    <title>UltraPDF — Free Offline PDF Editor & 16 Tools</title>
+    <meta
+      name="description"
+      content="Edit text, sign, merge, split, compress, convert, and password-protect PDFs 100% offline and free in your browser. 16 tools with zero signup and zero file uploads."
+    />
+    <meta
+      name="keywords"
+      content="ultrapdf, ultra pdf, ultrapdf.github.io, free pdf editor, offline pdf editor, edit pdf in browser, merge pdf, split pdf, compress pdf, sign pdf, images to pdf, jpg to pdf, watermark pdf, page numbers pdf, rotate pdf, reorder pdf pages, delete pdf pages, extract pdf pages, protect pdf with password, unlock pdf, text to pdf, pdf to images, batch pdf tools, editor pdf gratis, editor pdf offline, unir pdf, separar pdf, comprimir pdf, assinar pdf"
+    />
+    <meta name="author" content="Saulo MGG" />
+    <meta name="application-name" content="UltraPDF" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <link rel="author" href="./humans.txt" />
+    <link rel="canonical" href="https://ultrapdf.github.io/" />
+
+    <!-- International & Regional Hreflang (Global English, Brazil, Portugal & Spanish) -->
+    <link rel="alternate" hreflang="en" href="https://ultrapdf.github.io/" />
+    <link rel="alternate" hreflang="en-US" href="https://ultrapdf.github.io/?lang=en" />
+    <link rel="alternate" hreflang="en-GB" href="https://ultrapdf.github.io/?lang=en" />
+    <link rel="alternate" hreflang="pt-BR" href="https://ultrapdf.github.io/?lang=pt" />
+    <link rel="alternate" hreflang="pt-PT" href="https://ultrapdf.github.io/?lang=pt" />
+    <link rel="alternate" hreflang="pt" href="https://ultrapdf.github.io/?lang=pt" />
+    <link rel="alternate" hreflang="es" href="https://ultrapdf.github.io/?lang=es" />
+    <link rel="alternate" hreflang="es-419" href="https://ultrapdf.github.io/?lang=es" />
+    <link rel="alternate" hreflang="x-default" href="https://ultrapdf.github.io/" />
+
+    <!-- OpenGraph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="UltraPDF" />
+    <meta property="og:url" content="https://ultrapdf.github.io/" />
+    <meta property="og:title" content="UltraPDF — Free Offline PDF Editor & 16 Tools" />
+    <meta
+      property="og:description"
+      content="Edit text, sign, merge, split, compress, convert, and password-protect PDFs 100% offline and free in your browser. 16 tools with zero signup and zero file uploads."
+    />
+    <meta property="og:image" content="https://ultrapdf.github.io/og-cover.jpg" />
+    <meta property="og:image:secure_url" content="https://ultrapdf.github.io/og-cover.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:alt" content="UltraPDF — Free 100% Offline PDF Editor & 16 Tools" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_GB" />
+    <meta property="og:locale:alternate" content="pt_BR" />
+    <meta property="og:locale:alternate" content="pt_PT" />
+    <meta property="og:locale:alternate" content="es_ES" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="UltraPDF — Free Offline PDF Editor & 16 Tools" />
+    <meta
+      name="twitter:description"
+      content="Edit text, sign, merge, split, compress, convert, and password-protect PDFs 100% offline and free in your browser. 16 tools with zero signup and zero file uploads."
+    />
+    <meta name="twitter:image" content="https://ultrapdf.github.io/og-cover.jpg" />
+
+    <!-- PWA & Icons -->
+    <meta name="theme-color" content="#0F172A" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="UltraPDF" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "name": "UltraPDF",
+            "alternateName": ["Ultra PDF", "UltraPDF Offline", "UltraPDF Editor de PDF"],
+            "url": "https://ultrapdf.github.io/",
+            "image": "https://ultrapdf.github.io/og-cover.jpg",
+            "applicationCategory": "UtilitiesApplication",
+            "applicationSubCategory": "PDF Editor & Document Tools",
+            "operatingSystem": "All, Web, Android, iOS, Windows, macOS, Linux",
+            "browserRequirements": "Requires JavaScript & HTML5 Canvas",
+            "inLanguage": ["pt-BR", "pt-PT", "en", "es"],
+            "isAccessibleForFree": true,
+            "description": "Editor profissional de PDF em PWA e suíte com 16 ferramentas gratuitas e 100% offline: editar texto, unir PDFs, separar páginas, comprimir, assinar, converter imagens/texto, marca d'água, numeração, girar, reordenar, excluir, extrair, proteger/remover senha e processamento em lote.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "BRL"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Saulo MGG",
+              "url": "https://ultrapdf.github.io/",
+              "sameAs": ["https://www.instagram.com/saulo_mgg/"]
+            },
+            "featureList": [
+              "Editar texto existente diretamente no PDF offline",
+              "1. Unir múltiplos PDFs em um documento",
+              "2. Separar e dividir páginas de PDF",
+              "3. Comprimir tamanho de PDF sem enviar para servidor",
+              "4. Assinar PDF com desenho livre ou assinatura salva",
+              "5. Converter imagens PNG, JPG e WebP para PDF",
+              "6. Adicionar marca d'água de texto em lote",
+              "7. Inserir numeração de páginas configurável",
+              "8. Girar páginas individualmente ou em lote",
+              "9. Reordenar páginas visualmente por miniaturas",
+              "10. Excluir páginas indesejadas do PDF",
+              "11. Extrair páginas específicas para novo PDF ou ZIP",
+              "12. Proteger PDF com senha de abertura e permissões",
+              "13. Remover senha de arquivos PDF desbloqueados",
+              "14. Converter texto e arquivos TXT/MD/CSV para PDF",
+              "15. Converter páginas PDF para imagem PNG e JPEG",
+              "16. Processamento em lote combinado em múltiplos PDFs"
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "name": "16 Ferramentas de PDF Offline do UltraPDF",
+            "numberOfItems": 16,
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Unir PDFs", "url": "https://ultrapdf.github.io/?tool=merge" },
+              { "@type": "ListItem", "position": 2, "name": "Separar páginas de PDF", "url": "https://ultrapdf.github.io/?tool=split" },
+              { "@type": "ListItem", "position": 3, "name": "Comprimir PDF", "url": "https://ultrapdf.github.io/?tool=compress" },
+              { "@type": "ListItem", "position": 4, "name": "Assinar PDF", "url": "https://ultrapdf.github.io/?tool=sign" },
+              { "@type": "ListItem", "position": 5, "name": "Imagens para PDF", "url": "https://ultrapdf.github.io/?tool=imagesToPdf" },
+              { "@type": "ListItem", "position": 6, "name": "Marca d’água em PDF", "url": "https://ultrapdf.github.io/?tool=watermark" },
+              { "@type": "ListItem", "position": 7, "name": "Numeração de páginas em PDF", "url": "https://ultrapdf.github.io/?tool=pageNumbers" },
+              { "@type": "ListItem", "position": 8, "name": "Girar páginas de PDF", "url": "https://ultrapdf.github.io/?tool=rotate" },
+              { "@type": "ListItem", "position": 9, "name": "Reordenar páginas de PDF", "url": "https://ultrapdf.github.io/?tool=reorder" },
+              { "@type": "ListItem", "position": 10, "name": "Excluir páginas de PDF", "url": "https://ultrapdf.github.io/?tool=deletePages" },
+              { "@type": "ListItem", "position": 11, "name": "Extrair páginas de PDF", "url": "https://ultrapdf.github.io/?tool=extractPages" },
+              { "@type": "ListItem", "position": 12, "name": "Proteger PDF com senha", "url": "https://ultrapdf.github.io/?tool=protect" },
+              { "@type": "ListItem", "position": 13, "name": "Remover senha de PDF", "url": "https://ultrapdf.github.io/?tool=unlock" },
+              { "@type": "ListItem", "position": 14, "name": "Converter texto para PDF", "url": "https://ultrapdf.github.io/?tool=textToPdf" },
+              { "@type": "ListItem", "position": 15, "name": "Converter PDF para imagem", "url": "https://ultrapdf.github.io/?tool=pdfToImages" },
+              { "@type": "ListItem", "position": 16, "name": "Processamento em lote de PDF", "url": "https://ultrapdf.github.io/?tool=batch" }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "O UltraPDF é realmente gratuito e funciona offline?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. O UltraPDF é 100% gratuito, sem cadastro e sem marca d'água forçada. Todo o processamento acontece localmente no seu navegador ou aplicativo PWA instalado, mesmo sem conexão com a internet."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Meus arquivos PDF são enviados para algum servidor?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Não. Nenhum documento, imagem ou assinatura sai do seu dispositivo. Os arquivos são processados diretamente na memória do navegador e podem ser salvos localmente via IndexedDB."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quais ferramentas de PDF estão disponíveis no UltraPDF?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Além do editor inline de texto e formulários, o UltraPDF oferece 16 ferramentas gratuitas para um ou vários arquivos: Unir PDFs, Separar páginas, Comprimir PDF, Assinar PDF, Imagens para PDF, Marca d'água, Numeração de páginas, Girar, Reordenar, Excluir, Extrair páginas, Proteger com senha, Remover senha, Texto para PDF, PDF para imagem e Processamento em lote."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is UltraPDF a free offline PDF editor for English and Spanish users too?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. UltraPDF supports Portuguese, English, and Spanish with 16 privacy-first offline PDF tools to merge, split, compress, sign, convert, and protect PDFs locally on any device."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="./assets/index-CQ8SVJb2.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-pP25SEvz.js">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-ui-BSd4216s.js">
+    <link rel="modulepreload" crossorigin href="./assets/vendor-pdf-Dm120zMa.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-DNYbwHJR.css">
+  <link rel="manifest" href="./manifest.webmanifest"></head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-red-600/15 selection:text-red-700 dark:bg-slate-950 dark:text-slate-100">
+    <div id="root"></div>
+
+    <!-- Crawlable HTML fallback for search engines without JS execution -->
+    <noscript>
+      <main style="max-width:960px;margin:2rem auto;padding:1rem;font-family:sans-serif;line-height:1.6;">
+        <h1>UltraPDF — Editor e Ferramentas de PDF 100% Offline Grátis</h1>
+        <p>
+          Edite textos, assine documentos, una, separe, comprima, converta imagens e proteja arquivos PDF com senha
+          diretamente no navegador ou PWA, sem enviar nenhum arquivo para servidores externos. Disponível em Português, Inglês e Espanhol.
+        </p>
+        <h2>16 Ferramentas Gratuitas de PDF (Um ou Vários Arquivos)</h2>
+        <ul>
+          <li><a href="?tool=merge">1. Unir PDFs (Merge PDFs)</a></li>
+          <li><a href="?tool=split">2. Separar páginas de PDF (Split PDF)</a></li>
+          <li><a href="?tool=compress">3. Comprimir PDF (Compress PDF)</a></li>
+          <li><a href="?tool=sign">4. Assinar PDF (Sign PDF)</a></li>
+          <li><a href="?tool=imagesToPdf">5. Imagens PNG e JPG para PDF (Images to PDF)</a></li>
+          <li><a href="?tool=watermark">6. Marca d’água em PDF (Watermark PDF)</a></li>
+          <li><a href="?tool=pageNumbers">7. Numeração de páginas em PDF (Page Numbers)</a></li>
+          <li><a href="?tool=rotate">8. Girar páginas de PDF (Rotate PDF)</a></li>
+          <li><a href="?tool=reorder">9. Reordenar páginas de PDF (Reorder Pages)</a></li>
+          <li><a href="?tool=deletePages">10. Excluir páginas de PDF (Delete Pages)</a></li>
+          <li><a href="?tool=extractPages">11. Extrair páginas de PDF (Extract Pages)</a></li>
+          <li><a href="?tool=protect">12. Proteger PDF com senha (Protect PDF)</a></li>
+          <li><a href="?tool=unlock">13. Remover senha de PDF (Unlock PDF)</a></li>
+          <li><a href="?tool=textToPdf">14. Converter texto e TXT para PDF (Text to PDF)</a></li>
+          <li><a href="?tool=pdfToImages">15. Converter PDF para imagem PNG e JPG (PDF to Images)</a></li>
+          <li><a href="?tool=batch">16. Processamento em lote de múltiplos PDFs (Batch PDF)</a></li>
+        </ul>
+      </main>
+    </noscript>
+
+  </body>
+</html>

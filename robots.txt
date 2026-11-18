@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+Disallow: /*.zip$
+
+User-agent: Googlebot
+Allow: /
+Disallow: /*.zip$
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Disallow: /*.zip$
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /*.zip$
+
+User-agent: Applebot
+Allow: /
+Disallow: /*.zip$
+
+Sitemap: https://ultrapdf.github.io/sitemap.xml

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="updf-bg" x1="32" y1="24" x2="480" y2="488" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B162C"/>
+      <stop offset="100%" stop-color="#040A17"/>
+    </linearGradient>
+    <linearGradient id="updf-fold" x1="298" y1="74" x2="366" y2="168" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#94A3B8"/>
+      <stop offset="55%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#updf-bg)"/>
+
+  <!-- Folded white PDF sheet -->
+  <path d="M122 86C122 72.7452 132.745 62 146 62H306L398 154V426C398 439.255 387.255 450 374 450H146C132.745 450 122 439.255 122 426V86Z" fill="#FFFFFF"/>
+
+  <!-- Fold shadow & crisp white corner flap -->
+  <path d="M306 62L288 176L398 154H324C314.059 154 306 145.941 306 136V62Z" fill="url(#updf-fold)"/>
+  <path d="M306 62L398 154H326C314.954 154 306 145.046 306 134V62Z" fill="#FFFFFF"/>
+
+  <!-- Chamfered crimson architectural U emblem -->
+  <path d="M192 184H232V294H284V184H324V296L286 334H230L192 296V184Z" fill="#C8102E"/>
+
+  <!-- Precision slanted bar below U -->
+  <path d="M206 364H332L310 388H184L206 364Z" fill="#C8102E"/>
+</svg>

@@ -1,0 +1,11 @@
+/* TEAM */
+  Creator & Maintainer: Saulo MGG
+  Site: https://ultrapdf.github.io/
+  Instagram: https://www.instagram.com/saulo_mgg/
+  Location: Brazil
+
+/* SITE */
+  Name: UltraPDF
+  Languages: Portuguese (PT-BR / PT-PT), English (EN), Spanish (ES)
+  Standards: HTML5, TypeScript, React, Tailwind CSS, PWA, Client-Side PDF
+  Privacy: 100% Offline, zero uploads, zero tracking cookies
